@@ -63,55 +63,55 @@ aws4@^1.8.0:
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.8.0.tgz#f0e003d9ca9e7f59c7a508945d7b2ef9a04a542f"
 
-azure-iot-amqp-base@1.5.3:
-  version "1.5.3"
-  resolved "https://registry.yarnpkg.com/azure-iot-amqp-base/-/azure-iot-amqp-base-1.5.3.tgz#5186f6d0ff798c48296f348f6d4355428d7cdef6"
+azure-iot-amqp-base@1.7.3:
+  version "1.7.3"
+  resolved "https://registry.yarnpkg.com/azure-iot-amqp-base/-/azure-iot-amqp-base-1.7.3.tgz#52a9fb7c74ed217a07b3470b5118a6dcac0c4b6a"
   dependencies:
     amqp10 "^3.6.0"
     amqp10-transport-ws "^0.0.5"
     async "^2.5.0"
-    azure-iot-common "1.5.2"
+    azure-iot-common "1.7.3"
     bluebird "^3.5.0"
     debug "^3.0.1"
     lodash.merge "^4.6.1"
     machina "^2.0.1"
     uuid "^3.0.1"
 
-azure-iot-common@1.5.2:
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/azure-iot-common/-/azure-iot-common-1.5.2.tgz#486ce9f2eb5d18b0bbae03117c19db9fd16db2f3"
+azure-iot-common@1.7.3:
+  version "1.7.3"
+  resolved "https://registry.yarnpkg.com/azure-iot-common/-/azure-iot-common-1.7.3.tgz#5dbd48d20232dafc6f8028d33abcccf19064e88c"
   dependencies:
     getos "^3.1.0"
 
-azure-iot-device-amqp@1.4.3:
-  version "1.4.3"
-  resolved "https://registry.yarnpkg.com/azure-iot-device-amqp/-/azure-iot-device-amqp-1.4.3.tgz#1724e73f5c8b1aceeda83966db9f47b1743a7964"
+azure-iot-device-amqp@1.7.3:
+  version "1.7.3"
+  resolved "https://registry.yarnpkg.com/azure-iot-device-amqp/-/azure-iot-device-amqp-1.7.3.tgz#854598f8ca5a7c99ab46a8da5b99b239561a912e"
   dependencies:
     async "^2.5.0"
-    azure-iot-amqp-base "1.5.3"
-    azure-iot-common "1.5.2"
-    azure-iot-device "1.4.3"
+    azure-iot-amqp-base "1.7.3"
+    azure-iot-common "1.7.3"
+    azure-iot-device "1.7.3"
     debug "^3.0.1"
     machina "^2.0.1"
     uuid "^3.0.1"
 
-azure-iot-device@1.4.3:
-  version "1.4.3"
-  resolved "https://registry.yarnpkg.com/azure-iot-device/-/azure-iot-device-1.4.3.tgz#46892d4a3da870039c8683b80d5fda553871ba6b"
+azure-iot-device@1.7.3:
+  version "1.7.3"
+  resolved "https://registry.yarnpkg.com/azure-iot-device/-/azure-iot-device-1.7.3.tgz#4809bb823c60086dd7ff00e2c271c1fb00afb68a"
   dependencies:
-    azure-iot-common "1.5.2"
-    azure-iot-http-base "1.4.2"
+    azure-iot-common "1.7.3"
+    azure-iot-http-base "1.7.3"
     azure-storage "^2.8.1"
     debug "^3.1.0"
-    lodash "^4.17.5"
+    lodash "^4.17.10"
     machina "^2.0.1"
     traverse "^0.6.6"
 
-azure-iot-http-base@1.4.2:
-  version "1.4.2"
-  resolved "https://registry.yarnpkg.com/azure-iot-http-base/-/azure-iot-http-base-1.4.2.tgz#04bef4d4af72bec2b0fbe0af582ab8276f3f0caf"
+azure-iot-http-base@1.7.3:
+  version "1.7.3"
+  resolved "https://registry.yarnpkg.com/azure-iot-http-base/-/azure-iot-http-base-1.7.3.tgz#b0e93daf279768ad8f4ff96d0c30d071363edef2"
   dependencies:
-    azure-iot-common "1.5.2"
+    azure-iot-common "1.7.3"
     debug "^3.1.0"
     uuid "^3.2.1"
 
@@ -336,7 +336,7 @@ lodash@3.x:
   version "3.10.1"
   resolved "http://registry.npmjs.org/lodash/-/lodash-3.10.1.tgz#5bf45e8e49ba4189e17d482789dfd15bd140b7b6"
 
-lodash@^4.14.0, lodash@^4.17.10, lodash@^4.17.2, lodash@^4.17.5:
+lodash@^4.14.0, lodash@^4.17.10, lodash@^4.17.2:
   version "4.17.10"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.10.tgz#1b7793cf7259ea38fb3661d4d38b3260af8ae4e7"
 

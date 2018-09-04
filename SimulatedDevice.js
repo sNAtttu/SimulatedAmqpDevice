@@ -31,6 +31,7 @@ setInterval(function(){
   var temperature = 20 + (Math.random() * 15);
   var message = new Message(JSON.stringify({
     temperature: temperature,
+    timeStamp: new Date().toISOString(),
     humidity: 60 + (Math.random() * 20)
   }));
 
@@ -39,7 +40,6 @@ setInterval(function(){
   message.properties.add('temperatureAlert', (temperature > 30) ? 'true' : 'false');
 
   console.log('Sending message: ' + message.getData());
-
   // Send the message.
   client.sendEvent(message, function (err) {
     if (err) {

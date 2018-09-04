@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/Azure-Samples/azure-iot-samples-node#readme",
   "dependencies": {
-    "azure-iot-device": "1.4.3",
-    "azure-iot-device-amqp": "1.4.3"
+    "azure-iot-device": "1.7.3",
+    "azure-iot-device-amqp": "1.7.3"
   }
 }
