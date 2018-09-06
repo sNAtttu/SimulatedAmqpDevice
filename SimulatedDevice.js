@@ -20,11 +20,12 @@ var connectionString = '';
 //   https://github.com/Azure/azure-iot-sdk-node
 // The sample connects to a device-specific MQTT endpoint on your IoT Hub.
 const { Amqp } = require('azure-iot-device-amqp');
+const { NoRetry } = require('azure-iot-common');
 var DeviceClient = require('azure-iot-device').Client
 var Message = require('azure-iot-device').Message;
 
 var client = DeviceClient.fromConnectionString(connectionString, Amqp);
-
+client.setRetryPolicy(new NoRetry());
 // Create a message and send it to the IoT hub every second
 setInterval(function(){
   // Simulate telemetry.
