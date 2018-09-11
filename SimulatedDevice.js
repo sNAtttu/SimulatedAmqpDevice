@@ -21,8 +21,8 @@ var connectionString = '';
 // The sample connects to a device-specific MQTT endpoint on your IoT Hub.
 const { Amqp } = require('azure-iot-device-amqp');
 const { NoRetry } = require('azure-iot-common');
-var DeviceClient = require('azure-iot-device').Client
-var Message = require('azure-iot-device').Message;
+const { DeviceClient } = require('azure-iot-device');
+const { Message } = require('azure-iot-device');
 
 var client = DeviceClient.fromConnectionString(connectionString, Amqp);
 client.setRetryPolicy(new NoRetry());
