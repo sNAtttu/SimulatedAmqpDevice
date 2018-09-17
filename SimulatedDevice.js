@@ -19,12 +19,11 @@ var connectionString = '';
 // Using the Node.js Device SDK for IoT Hub:
 //   https://github.com/Azure/azure-iot-sdk-node
 // The sample connects to a device-specific MQTT endpoint on your IoT Hub.
-const { Amqp } = require('azure-iot-device-amqp');
+const { clientFromConnectionString } = require('azure-iot-device-amqp');
 const { NoRetry } = require('azure-iot-common');
-const { DeviceClient } = require('azure-iot-device');
 const { Message } = require('azure-iot-device');
 
-var client = DeviceClient.fromConnectionString(connectionString, Amqp);
+var client = clientFromConnectionString(connectionString);
 client.setRetryPolicy(new NoRetry());
 // Create a message and send it to the IoT hub every second
 setInterval(function(){

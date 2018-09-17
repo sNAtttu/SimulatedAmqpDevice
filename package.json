@@ -4,7 +4,8 @@
   "description": "Simulated device application in the IoT Hub quickstart device-to-cloud sample",
   "main": "SimulatedDevice.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docker": "docker build --build-arg \"HTTP_PROXY=http://access1109.cws.sco.cisco.com:8080\" -t simulated-device ."
   },
   "repository": {
     "type": "git",
@@ -17,8 +18,8 @@
   },
   "homepage": "https://github.com/Azure-Samples/azure-iot-samples-node#readme",
   "dependencies": {
-    "azure-iot-device": "1.7.3",
-    "azure-iot-device-amqp": "1.7.3",
-    "azure-iot-common": "1.7.3"
+    "azure-iot-device": "1.7.4",
+    "azure-iot-device-amqp": "1.7.4",
+    "azure-iot-common": "1.7.4"
   }
 }

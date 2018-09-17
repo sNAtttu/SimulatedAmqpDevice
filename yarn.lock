@@ -11,24 +11,6 @@ ajv@^5.3.0:
     fast-json-stable-stringify "^2.0.0"
     json-schema-traverse "^0.3.0"
 
-amqp10-transport-ws@^0.0.5:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/amqp10-transport-ws/-/amqp10-transport-ws-0.0.5.tgz#b0f827c24ad4e181528bcbb2deceb71f4a132999"
-  dependencies:
-    nodejs-websocket "^1.7.0"
-
-amqp10@^3.6.0:
-  version "3.6.0"
-  resolved "https://registry.yarnpkg.com/amqp10/-/amqp10-3.6.0.tgz#8172676a01c1c6e5968aba8b1fdffecb3435775c"
-  dependencies:
-    bl "^1.1.2"
-    bluebird "^3.4.6"
-    buffer-builder "^0.2.0"
-    debug "^2.3.3"
-    lodash "^4.17.2"
-    node-int64 "^0.4.0"
-    stately.js "^1.3.0"
-
 asn1@~0.2.3:
   version "0.2.4"
   resolved "https://registry.yarnpkg.com/asn1/-/asn1-0.2.4.tgz#8d2475dfab553bb33e77b54e59e880bb8ce23136"
@@ -38,6 +20,10 @@ asn1@~0.2.3:
 assert-plus@1.0.0, assert-plus@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/assert-plus/-/assert-plus-1.0.0.tgz#f12e0f3c5d77b0b1cdd9146942e4e96c1e4dd525"
+
+async-limiter@~1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/async-limiter/-/async-limiter-1.0.0.tgz#78faed8c3d074ab81f22b4e985d79e8738f720f8"
 
 async@2.4.0:
   version "2.4.0"
@@ -63,55 +49,55 @@ aws4@^1.8.0:
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.8.0.tgz#f0e003d9ca9e7f59c7a508945d7b2ef9a04a542f"
 
-azure-iot-amqp-base@1.7.3:
-  version "1.7.3"
-  resolved "https://registry.yarnpkg.com/azure-iot-amqp-base/-/azure-iot-amqp-base-1.7.3.tgz#52a9fb7c74ed217a07b3470b5118a6dcac0c4b6a"
+azure-iot-amqp-base@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/azure-iot-amqp-base/-/azure-iot-amqp-base-2.0.0.tgz#0320193a012ff8e711e67414c3617b4bcfb5904c"
   dependencies:
-    amqp10 "^3.6.0"
-    amqp10-transport-ws "^0.0.5"
     async "^2.5.0"
-    azure-iot-common "1.7.3"
-    bluebird "^3.5.0"
+    azure-iot-common "1.7.4"
     debug "^3.0.1"
     lodash.merge "^4.6.1"
     machina "^2.0.1"
+    rhea "^0.2.18"
     uuid "^3.0.1"
+    ws "^6.0.0"
 
-azure-iot-common@1.7.3:
-  version "1.7.3"
-  resolved "https://registry.yarnpkg.com/azure-iot-common/-/azure-iot-common-1.7.3.tgz#5dbd48d20232dafc6f8028d33abcccf19064e88c"
+azure-iot-common@1.7.4:
+  version "1.7.4"
+  resolved "https://registry.yarnpkg.com/azure-iot-common/-/azure-iot-common-1.7.4.tgz#2b54d4cc3e8c4636d9373fa7dd8efe4acee1e902"
   dependencies:
     getos "^3.1.0"
 
-azure-iot-device-amqp@1.7.3:
-  version "1.7.3"
-  resolved "https://registry.yarnpkg.com/azure-iot-device-amqp/-/azure-iot-device-amqp-1.7.3.tgz#854598f8ca5a7c99ab46a8da5b99b239561a912e"
+azure-iot-device-amqp@1.7.4:
+  version "1.7.4"
+  resolved "https://registry.yarnpkg.com/azure-iot-device-amqp/-/azure-iot-device-amqp-1.7.4.tgz#bfa96796e2c29028bd53ac3eebbd7188aa45db04"
   dependencies:
     async "^2.5.0"
-    azure-iot-amqp-base "1.7.3"
-    azure-iot-common "1.7.3"
-    azure-iot-device "1.7.3"
-    debug "^3.0.1"
+    azure-iot-amqp-base "2.0.0"
+    azure-iot-common "1.7.4"
+    azure-iot-device "1.7.4"
+    debug "^3.1.0"
     machina "^2.0.1"
+    rhea "^0.2.18"
     uuid "^3.0.1"
 
-azure-iot-device@1.7.3:
-  version "1.7.3"
-  resolved "https://registry.yarnpkg.com/azure-iot-device/-/azure-iot-device-1.7.3.tgz#4809bb823c60086dd7ff00e2c271c1fb00afb68a"
+azure-iot-device@1.7.4:
+  version "1.7.4"
+  resolved "https://registry.yarnpkg.com/azure-iot-device/-/azure-iot-device-1.7.4.tgz#975d936cfa0abdbd408fd13c0d739b36d65b2c8d"
   dependencies:
-    azure-iot-common "1.7.3"
-    azure-iot-http-base "1.7.3"
+    azure-iot-common "1.7.4"
+    azure-iot-http-base "1.7.4"
     azure-storage "^2.8.1"
     debug "^3.1.0"
     lodash "^4.17.10"
     machina "^2.0.1"
     traverse "^0.6.6"
 
-azure-iot-http-base@1.7.3:
-  version "1.7.3"
-  resolved "https://registry.yarnpkg.com/azure-iot-http-base/-/azure-iot-http-base-1.7.3.tgz#b0e93daf279768ad8f4ff96d0c30d071363edef2"
+azure-iot-http-base@1.7.4:
+  version "1.7.4"
+  resolved "https://registry.yarnpkg.com/azure-iot-http-base/-/azure-iot-http-base-1.7.4.tgz#cf762cc10d341ca2938b214882dae1e7aa95026f"
   dependencies:
-    azure-iot-common "1.7.3"
+    azure-iot-common "1.7.4"
     debug "^3.1.0"
     uuid "^3.2.1"
 
@@ -137,24 +123,9 @@ bcrypt-pbkdf@^1.0.0:
   dependencies:
     tweetnacl "^0.14.3"
 
-bl@^1.1.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/bl/-/bl-1.2.2.tgz#a160911717103c07410cef63ef51b397c025af9c"
-  dependencies:
-    readable-stream "^2.3.5"
-    safe-buffer "^5.1.1"
-
-bluebird@^3.4.6, bluebird@^3.5.0:
-  version "3.5.2"
-  resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.5.2.tgz#1be0908e054a751754549c270489c1505d4ab15a"
-
 browserify-mime@~1.2.9:
   version "1.2.9"
   resolved "https://registry.yarnpkg.com/browserify-mime/-/browserify-mime-1.2.9.tgz#aeb1af28de6c0d7a6a2ce40adb68ff18422af31f"
-
-buffer-builder@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/buffer-builder/-/buffer-builder-0.2.0.tgz#3322cd307d8296dab1f604618593b261a3fade8f"
 
 caseless@~0.12.0:
   version "0.12.0"
@@ -180,11 +151,11 @@ dashdash@^1.12.0:
   dependencies:
     assert-plus "^1.0.0"
 
-debug@^2.3.3:
-  version "2.6.9"
-  resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
+debug@>=0.8.0:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-4.0.1.tgz#f9bb36d439b8d1f0dd52d8fb6b46e4ebb8c1cd5b"
   dependencies:
-    ms "2.0.0"
+    ms "^2.1.1"
 
 debug@^3.0.1, debug@^3.1.0:
   version "3.1.0"
@@ -277,7 +248,7 @@ http-signature@~1.2.0:
     jsprim "^1.2.2"
     sshpk "^1.7.0"
 
-inherits@^2.0.1, inherits@~2.0.1, inherits@~2.0.3:
+inherits@^2.0.1, inherits@~2.0.1:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.3.tgz#633c2c83e3da42a502f52466022480f4208261de"
 
@@ -336,7 +307,7 @@ lodash@3.x:
   version "3.10.1"
   resolved "http://registry.npmjs.org/lodash/-/lodash-3.10.1.tgz#5bf45e8e49ba4189e17d482789dfd15bd140b7b6"
 
-lodash@^4.14.0, lodash@^4.17.10, lodash@^4.17.2:
+lodash@^4.14.0, lodash@^4.17.10:
   version "4.17.10"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.10.tgz#1b7793cf7259ea38fb3661d4d38b3260af8ae4e7"
 
@@ -367,13 +338,9 @@ ms@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
 
-node-int64@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/node-int64/-/node-int64-0.4.0.tgz#87a9065cdb355d3182d8f94ce11188b825c68a3b"
-
-nodejs-websocket@^1.7.0:
-  version "1.7.1"
-  resolved "https://registry.yarnpkg.com/nodejs-websocket/-/nodejs-websocket-1.7.1.tgz#cccfbba823bf1cfa9680f168ab7ab53121e48410"
+ms@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.1.tgz#30a5864eb3ebb0a66f2ebe6d727af06a09d86e0a"
 
 oauth-sign@~0.9.0:
   version "0.9.0"
@@ -387,10 +354,6 @@ process-nextick-args@~1.0.6:
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-1.0.7.tgz#150e20b756590ad3f91093f25a4f2ad8bff30ba3"
 
-process-nextick-args@~2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-2.0.0.tgz#a37d732f4271b4ab1ad070d35508e8290788ffaa"
-
 psl@^1.1.24:
   version "1.1.29"
   resolved "https://registry.yarnpkg.com/psl/-/psl-1.1.29.tgz#60f580d360170bb722a797cc704411e6da850c67"
@@ -402,18 +365,6 @@ punycode@^1.4.1:
 qs@~6.5.2:
   version "6.5.2"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.2.tgz#cb3ae806e8740444584ef154ce8ee98d403f3e36"
-
-readable-stream@^2.3.5:
-  version "2.3.6"
-  resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-2.3.6.tgz#b11c27d88b8ff1fbe070643cf94b0c79ae1b0aaf"
-  dependencies:
-    core-util-is "~1.0.0"
-    inherits "~2.0.3"
-    isarray "~1.0.0"
-    process-nextick-args "~2.0.0"
-    safe-buffer "~5.1.1"
-    string_decoder "~1.1.1"
-    util-deprecate "~1.0.1"
 
 readable-stream@~2.0.0:
   version "2.0.6"
@@ -451,7 +402,13 @@ request@^2.86.0:
     tunnel-agent "^0.6.0"
     uuid "^3.3.2"
 
-safe-buffer@^5.0.1, safe-buffer@^5.1.1, safe-buffer@^5.1.2, safe-buffer@~5.1.0, safe-buffer@~5.1.1:
+rhea@^0.2.18:
+  version "0.2.20"
+  resolved "https://registry.yarnpkg.com/rhea/-/rhea-0.2.20.tgz#73481da94e996a5ab632dc9c494f5f70d391accd"
+  dependencies:
+    debug ">=0.8.0"
+
+safe-buffer@^5.0.1, safe-buffer@^5.1.2:
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.2.tgz#991ec69d296e0313747d59bdfd2b745c35f8828d"
 
@@ -478,19 +435,9 @@ sshpk@^1.7.0:
     jsbn "~0.1.0"
     tweetnacl "~0.14.0"
 
-stately.js@^1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/stately.js/-/stately.js-1.3.0.tgz#52d0d1c152a069a67cb14503ac5ddcdb8be1d777"
-
 string_decoder@~0.10.x:
   version "0.10.31"
   resolved "https://registry.yarnpkg.com/string_decoder/-/string_decoder-0.10.31.tgz#62e203bc41766c6c28c9fc84301dab1c5310fa94"
-
-string_decoder@~1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/string_decoder/-/string_decoder-1.1.1.tgz#9cf1611ba62685d7030ae9e4ba34149c3af03fc8"
-  dependencies:
-    safe-buffer "~5.1.0"
 
 tough-cookie@~2.4.3:
   version "2.4.3"
@@ -536,6 +483,12 @@ verror@1.10.0:
     assert-plus "^1.0.0"
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
+
+ws@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-6.0.0.tgz#eaa494aded00ac4289d455bac8d84c7c651cef35"
+  dependencies:
+    async-limiter "~1.0.0"
 
 xml2js@0.2.8:
   version "0.2.8"
