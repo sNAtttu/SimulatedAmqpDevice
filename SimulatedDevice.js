@@ -19,17 +19,22 @@ var connectionString = '';
 // Using the Node.js Device SDK for IoT Hub:
 //   https://github.com/Azure/azure-iot-sdk-node
 // The sample connects to a device-specific MQTT endpoint on your IoT Hub.
-const { clientFromConnectionString } = require('azure-iot-device-amqp');
+const hermaticosAmqp = require('azure-iot-device-amqp');
 const { NoRetry } = require('azure-iot-common');
-const { Message } = require('azure-iot-device');
+const Device = require('azure-iot-device');
 
-var client = clientFromConnectionString(connectionString);
-client.setRetryPolicy(new NoRetry());
+const authenticationProvider = Device.SharedAccessKeyAuthenticationProvider.fromConnectionString(connectionString);
+const transport = hermaticosAmqp.AmqpWs;
+const deviceClient = Device.Client.fromAuthenticationProvider(
+  authenticationProvider,
+  transport
+);
+deviceClient.setRetryPolicy(new NoRetry());
 // Create a message and send it to the IoT hub every second
 setInterval(function(){
   // Simulate telemetry.
   var temperature = 20 + (Math.random() * 15);
-  var message = new Message(JSON.stringify({
+  var message = new Device.Message(JSON.stringify({
     temperature: temperature,
     timeStamp: new Date().toISOString(),
     humidity: 60 + (Math.random() * 20)
@@ -41,7 +46,7 @@ setInterval(function(){
 
   console.log('Sending message: ' + message.getData());
   // Send the message.
-  client.sendEvent(message, function (err) {
+  deviceClient.sendEvent(message, function (err) {
     if (err) {
       console.error('send error: ' + err.toString());
     } else {
