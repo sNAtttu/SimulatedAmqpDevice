@@ -1,0 +1,42 @@
+version: '3'
+services:
+  telemetrysender0:
+    image: 'ten-messages-in-second:10'
+    environment:
+      DEBUG: azure*,rhea*
+    command: ["node", "SimulatedDevice.js"]
+  telemetrysender1:
+    image: 'ten-messages-in-second:10'
+    environment:
+      DEBUG: azure*,rhea*
+    command: ["node", "SimulatedDevice.js"]
+  telemetrysender2:
+    image: 'ten-messages-in-second:10'
+    environment:
+      DEBUG: azure*,rhea*
+    command: ["node", "SimulatedDevice.js"]
+  telemetrysender3:
+    image: 'ten-messages-in-second:10'
+    environment:
+      DEBUG: azure*,rhea*
+    command: ["node", "SimulatedDevice.js"]
+  telemetrysender4:
+    image: 'ten-messages-in-second:10'
+    environment:
+      DEBUG: azure*,rhea*
+    command: ["node", "SimulatedDevice.js"]
+  telemetrysender5:
+    image: 'ten-messages-in-second:10'
+    environment:
+      DEBUG: azure*,rhea*
+    command: ["node", "SimulatedDevice.js"]
+  telemetrysender6:
+    image: 'ten-messages-in-second:10'
+    environment:
+      DEBUG: azure*,rhea*
+    command: ["node", "SimulatedDevice.js"]
+  telemetrysender7:
+    image: 'ten-messages-in-second:10'
+    environment:
+      DEBUG: azure*,rhea*
+    command: ["node", "SimulatedDevice.js"]

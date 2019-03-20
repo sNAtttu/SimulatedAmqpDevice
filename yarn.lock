@@ -49,55 +49,60 @@ aws4@^1.8.0:
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.8.0.tgz#f0e003d9ca9e7f59c7a508945d7b2ef9a04a542f"
 
-azure-iot-amqp-base@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/azure-iot-amqp-base/-/azure-iot-amqp-base-2.0.0.tgz#0320193a012ff8e711e67414c3617b4bcfb5904c"
+azure-iot-amqp-base@2.2.4:
+  version "2.2.4"
+  resolved "https://registry.yarnpkg.com/azure-iot-amqp-base/-/azure-iot-amqp-base-2.2.4.tgz#6152517256cd1c545b03926d38159b78d4c71da2"
+  integrity sha512-n7kifkTjspFbwPG3WVXvaC3tGELGmpNX8KilOf8i+nNs1Vm61JSMn4abIG9g0+dWamODtzPbPILqdcntId7AlA==
   dependencies:
     async "^2.5.0"
-    azure-iot-common "1.7.4"
+    azure-iot-common "1.9.4"
     debug "^3.0.1"
     lodash.merge "^4.6.1"
-    machina "^2.0.1"
-    rhea "^0.2.18"
+    machina "^4.0.1"
+    rhea "^0.3.9"
     uuid "^3.0.1"
     ws "^6.0.0"
 
-azure-iot-common@1.7.4:
-  version "1.7.4"
-  resolved "https://registry.yarnpkg.com/azure-iot-common/-/azure-iot-common-1.7.4.tgz#2b54d4cc3e8c4636d9373fa7dd8efe4acee1e902"
+azure-iot-common@1.9.4:
+  version "1.9.4"
+  resolved "https://registry.yarnpkg.com/azure-iot-common/-/azure-iot-common-1.9.4.tgz#91e60bcb3880261b08e741d2187228780cfe84bf"
+  integrity sha512-tPcmg5Gli/DHioZRm4XM2acK1gtoiDh75c2T1ujqjjQLDDBPD9eaal062odCtyy3E/m+UDjY/c+ysroBD7d/mw==
   dependencies:
     getos "^3.1.0"
 
-azure-iot-device-amqp@1.7.4:
-  version "1.7.4"
-  resolved "https://registry.yarnpkg.com/azure-iot-device-amqp/-/azure-iot-device-amqp-1.7.4.tgz#bfa96796e2c29028bd53ac3eebbd7188aa45db04"
+azure-iot-device-amqp@1.9.4:
+  version "1.9.4"
+  resolved "https://registry.yarnpkg.com/azure-iot-device-amqp/-/azure-iot-device-amqp-1.9.4.tgz#836b679025322a9aea6f867be45576f880681fe1"
+  integrity sha512-GcYf3OoE5nSEQkNjVXlOx22ElNpNlhWV1Fc2lQv22hw/SOuKWxdbkHku56iTE17zHckWOJKa5STOndRg+QLdVA==
   dependencies:
     async "^2.5.0"
-    azure-iot-amqp-base "2.0.0"
-    azure-iot-common "1.7.4"
-    azure-iot-device "1.7.4"
+    azure-iot-amqp-base "2.2.4"
+    azure-iot-common "1.9.4"
+    azure-iot-device "1.9.4"
     debug "^3.1.0"
-    machina "^2.0.1"
-    rhea "^0.2.18"
+    machina "^4.0.1"
+    rhea "^0.3.9"
     uuid "^3.0.1"
 
-azure-iot-device@1.7.4:
-  version "1.7.4"
-  resolved "https://registry.yarnpkg.com/azure-iot-device/-/azure-iot-device-1.7.4.tgz#975d936cfa0abdbd408fd13c0d739b36d65b2c8d"
+azure-iot-device@1.9.4:
+  version "1.9.4"
+  resolved "https://registry.yarnpkg.com/azure-iot-device/-/azure-iot-device-1.9.4.tgz#9b19a481c71d0547bfc402ddbc41d21c59557623"
+  integrity sha512-4ChhXoW7f+Oe65W0gGatSIcmCrGufGSeOmpZtCJN/PuNSicMPWzjzoIq2T3aw/nZ3fRJOsC+8fhyTnaTnnCPFg==
   dependencies:
-    azure-iot-common "1.7.4"
-    azure-iot-http-base "1.7.4"
+    azure-iot-common "1.9.4"
+    azure-iot-http-base "1.9.4"
     azure-storage "^2.8.1"
     debug "^3.1.0"
     lodash "^4.17.10"
-    machina "^2.0.1"
+    machina "^4.0.1"
     traverse "^0.6.6"
 
-azure-iot-http-base@1.7.4:
-  version "1.7.4"
-  resolved "https://registry.yarnpkg.com/azure-iot-http-base/-/azure-iot-http-base-1.7.4.tgz#cf762cc10d341ca2938b214882dae1e7aa95026f"
+azure-iot-http-base@1.9.4:
+  version "1.9.4"
+  resolved "https://registry.yarnpkg.com/azure-iot-http-base/-/azure-iot-http-base-1.9.4.tgz#03448216975ffc6d13598f580f2b648d58d1936b"
+  integrity sha512-W9RkM3yfVKrGVn295dPJy9dHhaeJ04ZZLEnhdEfW6O9IYOWcImB5+m1tbyh0g64Er1U2ufUZudQQDK8WQOjNNA==
   dependencies:
-    azure-iot-common "1.7.4"
+    azure-iot-common "1.9.4"
     debug "^3.1.0"
     uuid "^3.2.1"
 
@@ -151,9 +156,10 @@ dashdash@^1.12.0:
   dependencies:
     assert-plus "^1.0.0"
 
-debug@>=0.8.0:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/debug/-/debug-4.0.1.tgz#f9bb36d439b8d1f0dd52d8fb6b46e4ebb8c1cd5b"
+"debug@0.8.0 - 3.5.0":
+  version "3.2.6"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-3.2.6.tgz#e83d17de16d8a7efb7717edbe5fb10135eee629b"
+  integrity sha512-mel+jf7nrtEl5Pn1Qx46zARXKDpBbvzezse7p7LqINmdoIk8PYP5SySaxEmYv6TZ0JyEKA1hsCId6DIhgITtWQ==
   dependencies:
     ms "^2.1.1"
 
@@ -303,19 +309,21 @@ lodash.merge@^4.6.1:
   version "4.6.1"
   resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.1.tgz#adc25d9cb99b9391c59624f379fbba60d7111d54"
 
-lodash@3.x:
-  version "3.10.1"
-  resolved "http://registry.npmjs.org/lodash/-/lodash-3.10.1.tgz#5bf45e8e49ba4189e17d482789dfd15bd140b7b6"
-
 lodash@^4.14.0, lodash@^4.17.10:
   version "4.17.10"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.10.tgz#1b7793cf7259ea38fb3661d4d38b3260af8ae4e7"
 
-machina@^2.0.1:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/machina/-/machina-2.0.2.tgz#aa17a51293abb02313da4e6120f234d3eadbf650"
+lodash@^4.17.5:
+  version "4.17.11"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
+  integrity sha512-cQKh8igo5QUhZ7lg38DYWAxMvjSAKG0A8wGSVimP07SIUEK2UO+arSRKbRZWtelMtN5V0Hkwh5ryOto/SshYIg==
+
+machina@^4.0.1:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/machina/-/machina-4.0.2.tgz#7ba13ea317fafc5c64cde75337fad168e1ac3937"
+  integrity sha512-OOlFrW1rd783S6tF36v5Ie/TM64gfvSl9kYLWL2cPA31J71HHWW3XrgSe1BZSFAPkh8532CMJMLv/s9L2aopiA==
   dependencies:
-    lodash "3.x"
+    lodash "^4.17.5"
 
 md5.js@1.3.4:
   version "1.3.4"
@@ -402,11 +410,12 @@ request@^2.86.0:
     tunnel-agent "^0.6.0"
     uuid "^3.3.2"
 
-rhea@^0.2.18:
-  version "0.2.20"
-  resolved "https://registry.yarnpkg.com/rhea/-/rhea-0.2.20.tgz#73481da94e996a5ab632dc9c494f5f70d391accd"
+rhea@^0.3.9:
+  version "0.3.11"
+  resolved "https://registry.yarnpkg.com/rhea/-/rhea-0.3.11.tgz#4b2a033321f1c9f354850f5b03bc7dd95866e4c0"
+  integrity sha512-SCVJwkRJFpmkpujNcTAH2NGqpNv0QEnZa3F9HH01IU8cuSxE7a/bmaHnwwoY+t5czcjQELeU4iHhJkib6KXy7A==
   dependencies:
-    debug ">=0.8.0"
+    debug "0.8.0 - 3.5.0"
 
 safe-buffer@^5.0.1, safe-buffer@^5.1.2:
   version "5.1.2"
