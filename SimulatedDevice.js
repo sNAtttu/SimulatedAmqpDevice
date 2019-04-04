@@ -21,6 +21,10 @@ var connectionString = '';
 // The sample connects to a device-specific MQTT endpoint on your IoT Hub.
 const { AmqpWs } = require('azure-iot-device-amqp');
 const { ExponentialBackOffWithJitter, RetryOperation } = require('azure-iot-common');
+const appInsights = require("applicationinsights");
+appInsights.setup("");
+appInsights.start();
+
 const Device = require('azure-iot-device');
 
 const transient = [
@@ -197,5 +201,12 @@ function sendOneTelemetry(){
     }
   });
 }
+
+function sendAppInsightsData() {
+  appInsights.defaultClient.trackMetric({name: "free memory", value: os.freemem()});
+}
+
+
 // sendOneTelemetry();
-setInterval(sendOneTelemetry, 100);
+setInterval(sendOneTelemetry, 200);
+setInterval(sendAppInsightsData, 1000);
